@@ -73,7 +73,7 @@ img {
 }
 
 /* -------------------------------------------------------- */
-
+/* dimensione per smartphone */
 @media screen and (max-width: 420px) {
   .row {
     width: 100%;
@@ -106,6 +106,46 @@ img {
   }
   img {
     max-width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+/* dimensione per tablet */
+@media screen and (min-width: 420px) and (max-width: 1000px) {
+  .row {
+    width: 100%;
+    margin-top: 10px;
+  }
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: calc(100% / 2 - 40px);
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  #lezioni .row img {
+    max-width: 50%;
+  }
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: calc(100% / 3 - 16px);
+    margin-bottom: 20px;
+    padding: 0 8px;
+  }
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  #why .row img {
+    padding: 0;
+    max-width: 25%;
+  }
+  img {
+    max-width: 50%;
     height: auto;
   }
 }
